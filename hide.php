@@ -19,7 +19,7 @@ use Flextype\Component\Event\Event;
 Event::addListener('onShortcodesInitialized', function () {
 
     // Shortcode: [hide]Some text here[/hide]
-    Content::shortcode()->addHandler('hide', function() {
+    Entries::shortcode()->addHandler('hide', function() {
         return '';
     });
 });
